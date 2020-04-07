@@ -143,7 +143,7 @@
     </div>
   </div>
   <!-- Question -->
-  <div class="instr-help-qn2" *ngIf="showQuestion.length === 0 || showQuestion[2]" #question>
+  <div class="instr-help-qn2" *ngIf="showQuestion.length === 0 || showQuestion[2]" id="session-questions" #question>
     <p>
       <button type="button" class="btn btn-outline-primary" (click)="isCollapsed2 = !isCollapsed2" [attr.aria-expanded]="!isCollapsed2">
         How do I add questions to a session?
@@ -205,7 +205,7 @@
     </div>
   </div>
   <!-- Question -->
-  <div class="instr-help-qn3" *ngIf="showQuestion.length === 0 || showQuestion[3]" #question>
+  <div class="instr-help-qn3" *ngIf="showQuestion.length === 0 || showQuestion[3]" id="session-preview" #question>
     <p>
       <button type="button" class="btn btn-outline-primary" (click)="isCollapsed3 = !isCollapsed3" [attr.aria-expanded]="!isCollapsed3">
         How do I preview a session?
@@ -232,7 +232,7 @@
   <!--Section-->
   <h3 *ngIf="displaySubsection(showQuestion, 4, 7)">Managing Session Responses</h3>
   <!-- Question -->
-  <div class="instr-help-qn4" *ngIf="showQuestion.length === 0 || showQuestion[4]" #question>
+  <div class="instr-help-qn4" *ngIf="showQuestion.length === 0 || showQuestion[4]" id="session-cannot-submit" #question>
     <p>
       <button type="button" class="btn btn-outline-primary" (click)="isCollapsed4 = !isCollapsed4" [attr.aria-expanded]="!isCollapsed4">
         What should I do if a student says he/she cannot submit an evaluation due to a technical glitch?
@@ -267,7 +267,7 @@
     </div>
   </div>
   <!--Question-->
-  <div class="instr-help-qn5" *ngIf="showQuestion.length === 0 || showQuestion[5]" #question>
+  <div class="instr-help-qn5" *ngIf="showQuestion.length === 0 || showQuestion[5]" id="session-view-results" #question>
     <p>
       <button type="button" class="btn btn-outline-primary" (click)="isCollapsed5 = !isCollapsed5" [attr.aria-expanded]="!isCollapsed5">
         How do I view the results of my session?
@@ -329,7 +329,7 @@
   <!--Section-->
   <h3 *ngIf="displaySubsection(showQuestion, 7, 10)">Adding Comments to Responses</h3>
   <!-- Question -->
-  <div class="instr-help-qn7" *ngIf="showQuestion.length === 0 || showQuestion[7]" #question>
+  <div class="instr-help-qn7" *ngIf="showQuestion.length === 0 || showQuestion[7]" id="session-add-comments" #question>
     <p>
       <button type="button" class="btn btn-outline-primary" (click)="isCollapsed7 = !isCollapsed7" [attr.aria-expanded]="!isCollapsed7">
         How do I create a comment on a response?
@@ -401,7 +401,7 @@
     </div>
   </div>
   <!--Question-->
-  <div class="instr-help-qn9" *ngIf="showQuestion.length === 0 || showQuestion[9]" #question>
+  <div class="instr-help-qn9" *ngIf="showQuestion.length === 0 || showQuestion[9]" id="session-search" #question>
     <p>
       <button type="button" class="btn btn-outline-primary" (click)="isCollapsed9 = !isCollapsed9" [attr.aria-expanded]="!isCollapsed9">
         How do I search for a feedback session question, response or comment on a response?
